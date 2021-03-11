@@ -16,7 +16,7 @@ const LeagueDetail = () => {
         fetch(url)
         .then(res=>res.json())
         .then(data=>setTeam(data.teams[0]))
-    },[])
+    },[teamId]);
     let gender=team.strGender;
     let pathImage;
     

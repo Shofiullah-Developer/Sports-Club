@@ -12,7 +12,7 @@ const League = (props) => {
                             <h3 className="card-title">{strTeam}</h3>
                             <p className="card-text">{strStadium}</p>
                 
-                             <Link to={`/league/${idTeam}`} class="btn btn-primary">Explor</Link> 
+                             <Link to={`/league/${idTeam}`} className="btn btn-primary">Explor</Link> 
                         </div>
                     </div>
                 </div>    

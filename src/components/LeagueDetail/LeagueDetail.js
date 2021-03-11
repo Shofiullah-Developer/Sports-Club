@@ -8,9 +8,9 @@ import { faGenderless, faHome, faPassport, faStar } from '@fortawesome/free-soli
 
 const LeagueDetail = () => {
     const {teamId}=useParams();
-    console.log(teamId);
+    
     const [team,setTeam]=useState({});
-    console.log(team);
+    
     useEffect(()=>{
         const url =`https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=${teamId}`;
         fetch(url)
@@ -19,7 +19,7 @@ const LeagueDetail = () => {
     },[])
     let gender=team.strGender;
     let pathImage;
-    console.log(gender)
+    
     if(gender==="Male"){
         pathImage = '/images/male.png'
     }else{

@@ -10,7 +10,7 @@ const Home = () => {
         .then(data=>setLeagues(data.teams))
         
     },[]);
-    console.log(leagues)
+    
     return (
 
         <div>

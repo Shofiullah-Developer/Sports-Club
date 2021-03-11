@@ -1,10 +1,9 @@
-import logo from './logo.svg';
+
 import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Home from './components/Home/Home';
 import LeagueDetail from './components/LeagueDetail/LeagueDetail';

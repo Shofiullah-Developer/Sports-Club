@@ -13,10 +13,10 @@ function App() {
   return (
     <Router>
         <Switch>
-          <Route path="/Home">
+          <Route exact path="/Home">
             <Home></Home>
           </Route>
-          <Route path="/league/:teamId">
+          <Route exact path="/league/:teamId">
             <LeagueDetail></LeagueDetail>
           </Route>
           <Route exact path="/">
